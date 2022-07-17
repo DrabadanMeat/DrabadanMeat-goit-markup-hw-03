@@ -23,14 +23,18 @@
       <a class="link logo" href="./index.html"><span class="acsent-logo">Web</span>Studio</a>
       <nav>
         <ul class="menu list">
-          <li><a class="link menu-item current" href="./index.html">Студія</a></li>
-          <li><a class="link menu-item" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="link menu-item" href="#contact">Контакти</a></li>
+          <li class="menu-item"><a class="link current" href="./index.html">Студія</a></li>
+          <li class="menu-item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="menu-item"><a class="link" href="#contact">Контакти</a></li>
         </ul>
       </nav>
       <ul class="contact-menu list">
-        <li><a class="link contact-mail" href="mailto:info@devstdio.com">info@vevstudio.com</a></li>
-        <li><a class="link contact-phone" href="tel:+380961111111">+380961111111</a></li>
+        <li class="contact-item">
+          <a class="link contact-mail" href="mailto:info@devstdio.com">info@vevstudio.com</a>
+        </li>
+        <li class="contact-item">
+          <a class="link contact-phone" href="tel:+380961111111">+380961111111</a>
+        </li>
       </ul>
     </header>
     <!--HERO-->
@@ -41,7 +45,7 @@
           <button class="hero-btn" name="button">Замовити послугу</button>
         </div>
       </section>
-      <section>
+      <section class="section">
         <!--Benefits-->
         <h2 class="visually-hidden">Наші переваги</h2>
         <ul class="list container benefits">
@@ -59,9 +63,7 @@
           </li>
           <li class="benefits-text">
             <h3 class="topic">Планування</h3>
-            <p class="rubric">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
+            <p class="rubric">Так само консультація з широким активом значною мірою зумовлює.</p>
           </li>
           <li class="benefits-text">
             <h3 class="topic">Сучасні технології</h3>
@@ -72,99 +74,117 @@
         </ul>
       </section>
       <!--Studies-->
-      <section>
-        <h2 class="stud-top">Чим ми займаємося</h2>
-        <ul class="list doing container">
-          <li>
-            <img
-              class="img-doing"
-              src="./images/work-for-pc.jpg"
-              alt="work for pc"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              class="img-doing"
-              src="./images/laptop-work.jpg"
-              alt="laptop work"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              class="img-doing"
-              src="./images/work-on-a-tablet.jpg"
-              alt="work on a tablet"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+      <section class="padding-zero">
+        <div class="container">
+          <h2 class="stud-top">Чим ми займаємося</h2>
+          <ul class="list doing">
+            <li class="stud-size">
+              <img
+                class="img-doing"
+                src="./images/work-for-pc.jpg"
+                alt="work for pc"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="stud-size">
+              <img
+                class="img-doing"
+                src="./images/laptop-work.jpg"
+                alt="laptop work"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="stud-size">
+              <img
+                class="img-doing"
+                src="./images/work-on-a-tablet.jpg"
+                alt="work on a tablet"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Team-->
-      <section class="perfuse">
-        <div class=" container">
-        <h2 class="team">Наша команда</h2>
-        <ul class="list team-box">
-          <li class="team-box-sizen">
-            <img
-              src="./images/igor-demyanenki.jpg"
-              alt="Ігор Дем'яненко"
-              width="270"
-              height="260"
-            />
-            <div class="team-box-color">
-              <h3 class="team-names">Ігор Демь'яненко</h3>
-              <p class="team-prof">Product Desinger</p>
-            </div>
-          </li>
-          <li class="team-box-sizen">
-            <img src="./images/olga-repina.jpg" alt="Ольга Рєпіна" width="270" height="260" />
-            <div class="team-box-color">
-              <h3 class="team-names">Ольга Рєпіна</h3>
-              <p class="team-prof">Frontend Developer</p>
-            </div>
-          </li>
-          <li class="team-box-sizen">
-            <img
-              src="./images/nikolay-tarasov.jpg"
-              alt="Микола Тарасов"
-              width="270"
-              height="260"
-            />
-            <div class="team-box-color">
-              <h3 class="team-names">Микола Тарасов</h3>
-              <p class="team-prof">Marketing</p>
-            </div>
-          </li>
-          <li class="team-box-sizen">
-            <img src="./images/michail-ermakov.jpg" alt="Михайло Єрмаков" width="270" height="260" />
-            <div class="team-box-color">
-              <h3 class="team-names">Михайло Єрмаков</h3>
-              <p class="team-prof">UI Designer</p>
-            </div>
-          </li>
-        </ul>
+      <section class="perfuse section">
+        <div class="container">
+          <h2 class="team">Наша команда</h2>
+          <ul class="list team-box">
+            <li class="team-box-sizen">
+              <img
+                src="./images/igor-demyanenki.jpg"
+                alt="Ігор Дем'яненко"
+                width="270"
+                height="260"
+              />
+              <div class="team-box-color">
+                <h3 class="team-names">Ігор Демь'яненко</h3>
+                <p class="team-prof">Product Desinger</p>
+              </div>
+            </li>
+            <li class="team-box-sizen">
+              <img src="./images/olga-repina.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+              <div class="team-box-color">
+                <h3 class="team-names">Ольга Рєпіна</h3>
+                <p class="team-prof">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="team-box-sizen">
+              <img
+                src="./images/nikolay-tarasov.jpg"
+                alt="Микола Тарасов"
+                width="270"
+                height="260"
+              />
+              <div class="team-box-color">
+                <h3 class="team-names">Микола Тарасов</h3>
+                <p class="team-prof">Marketing</p>
+              </div>
+            </li>
+            <li class="team-box-sizen">
+              <img
+                src="./images/michail-ermakov.jpg"
+                alt="Михайло Єрмаков"
+                width="270"
+                height="260"
+              />
+              <div class="team-box-color">
+                <h3 class="team-names">Михайло Єрмаков</h3>
+                <p class="team-prof">UI Designer</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <!--footer-->
     <footer class="foot">
       <div class="container foot-container">
-        <a class="link logo-footer" href="./index.html"><span class="acsent-logo">Web</span>Studio</a>
+        <a class="link logo-footer" href="./index.html"
+          ><span class="acsent-logo">Web</span>Studio</a
+        >
         <address class="adress-style">
           <ul class="list">
             <li class="info-size">
-              <a class="link maps" href="https://goo.gl/maps/6wFw4vnAE2UTVkqL7" target="_blank" rel="noopener noreferrer">м.
-                Київ, пр-т Лесі Українки, 26</a>
+              <a
+                class="link maps"
+                href="https://goo.gl/maps/6wFw4vnAE2UTVkqL7"
+                target="_blank"
+                rel="noopener noreferrer"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
             </li>
-            <li class=" info-size">
-              <a id="contact" class="link contact-mail" href="mailto:info@example.com">info@example.com</a>
+            <li class="info-size">
+              <a id="contact" class="link contact-mail" href="mailto:info@example.com"
+                >info@example.com</a
+              >
             </li>
-            <li class="info-size"><a class="link contact-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="info-size">
+              <a class="link contact-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
