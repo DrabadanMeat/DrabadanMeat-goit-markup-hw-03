@@ -6,10 +6,21 @@
   --hover-focus-btn: #188ce8;
   --perfuse-color: #f5f4fa;
   --head-logo: #000000;
+  --background-hero: #2f303a;
+  --portfolio-img: #EEEEEE;
 }
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primery-text-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
 h1,
 h2,
 h3,
+h4,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -23,6 +34,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -33,12 +46,9 @@ img {
   text-decoration: none;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--primery-text-color);
-  background-color: var(--background-color);
-  font-size: 14px;
-  letter-spacing: 0.03em;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 button {
@@ -54,11 +64,17 @@ button {
   padding-right: 15px;
 }
 
+
+/* <======================COMPONENTS==========================> */
+.pages-header {
+  
+   padding-top: 24px;
+  padding-bottom: 24px; 
+  border-bottom: 1px solid #ececec;
+}
 .page-header-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .menu {
   align-items: center;
@@ -70,9 +86,8 @@ button {
 }
 
 .menu-item:not(:last-child) {
-  margin-right: 90px;
+  margin-right: 50px;
 }
-/* <======================COMPONENTS==========================> */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -97,6 +112,17 @@ button {
   line-height: 1.38;
   color: var(--accent-color);
 }
+.menu-link{
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
 .menu-item {
   font-weight: 500;
   line-height: 1.14;
@@ -119,7 +145,7 @@ button {
   color: var(--primery-text-color);
 }
 .contact-item:not(:last-child) {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 .contact-mail:hover,
 .contact-mail:focus {
@@ -141,7 +167,7 @@ button {
 .portfolio-btn {
   color: var(--title-text-color);
   background-color: var(--perfuse-color);
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
@@ -149,6 +175,10 @@ button {
   text-align: center;
   border-radius: 4px;
   border: 0px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -161,6 +191,7 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 
   color: var(--title-text-color);
 }
@@ -173,7 +204,7 @@ button {
 /* <======================/HEADER==========================>  */
 /* <======================HERO==========================> */
 .hero {
-  background: #2f303a;
+  background: var(--background-hero);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -183,7 +214,7 @@ button {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   max-width: 696px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -233,6 +264,7 @@ button {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 
   color: var(--title-text-color);
 }
@@ -250,7 +282,7 @@ button {
   display: flex;
 }
 .benefits-text:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 .doing {
   display: flex;
@@ -280,22 +312,20 @@ button {
   color: var(--title-text-color);
 }
 .stud-size:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 /* <======================/STUDIES==========================> */
 /* <======================TEAMS==========================> */
 .perfuse {
   background-color: var(--perfuse-color);
-  display: flex;
-  align-items: center;
-  margin: auto;
+
 }
 .team {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   color: var(--title-text-color);
 }
@@ -304,7 +334,7 @@ button {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   color: var(--title-text-color);
 }
@@ -317,7 +347,6 @@ button {
   display: flex;
   align-items: center;
   margin: auto;
-  padding: auto;
 }
 
 .team-box-sizen {
@@ -325,14 +354,14 @@ button {
   box-sizing: content-box;
 }
 .team-box-sizen:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 .team-box-color {
   background-color: var(--background-color);
-  border-radius: 4px;
-  box-shadow: 0px 2px var(--primery-text-color);
-  padding-top: 30px;
-  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 /* <=======================/TEAM=========================> */
 /* <======================FOOTER==========================> */
@@ -348,45 +377,61 @@ button {
   color: var(--accent-color);
 }
 .foot {
-  background: #2f303a;
+  background: var(--background-hero);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .adress-style {
   font-style: normal;
   margin-top: 20px;
+  line-height: 1.71;
 }
-.foot-container {
-  margin-top: 60px;
-}
+
 .info-size {
   margin-bottom: 9px;
+}
+.contact-footer {
+  font-weight: 500;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+
+  color: var(--primery-text-color);
+}
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--accent-color);
 }
 /* <======================/FOOTER==========================> */
 /* <======================PORTFOLIO==========================> */
 .portfolio-btn-type {
-  max-width: 575px;
-  align-items: center;
+  /* max-width: 575px;
+  align-items: center; */
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 34px;
-  justify-content: space-between;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: 50px;
+  gap: 8px;
+  justify-content: center;
 }
 
 /* <======================/PORTFOLIO==========================> */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.li-sizen {
+
+/* .li-sizen {
   margin-bottom: 30px;
   margin-right: 30px;
 }
 .li-sizen:nth-child(3n) {
   margin-right: 0px;
-}
+} */
 .portfolio-grid {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio-img {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 54px;
+  background: var(--background-color);
+  border: 1px solid var(--portfolio-img);
 }
